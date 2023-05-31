@@ -5,4 +5,4 @@ from .forms import SnippetForm
 
 def snippet_list(request):
     snippets = Snippet.objects.all()
-    return render(request, 'snippet_list.html', {'snippets': snippets})
+    return render(request, 'snippets/snippet_list.html', {'snippets': snippets})

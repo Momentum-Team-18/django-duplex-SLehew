@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+    <h1 >Snippets</h1>
+    {% for snippet in snippets %}
+    <div class="album_container"></div>
+        <a>{{snippet}}</a>
+    {% endfor %}
+{% endblock %}
